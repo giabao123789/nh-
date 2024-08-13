@@ -1,0 +1,523 @@
+
+body{
+    margin:0;
+}
+.header{
+    
+    height:50px;
+    background-image:linear-gradient(90deg,rgb(114, 6, 6),rgb(56 13 40),rgb(206 160 48),rgb(51 53 3) );
+    
+}
+.header_navbar-list{
+    display:flex;
+    list-style: none;
+    padding-left: 20px;
+    padding-right:20px ;
+}
+.header_navbar{
+    display:flex;
+    justify-content: space-between;
+}
+.header_navbar-item{
+    margin:0 20px;
+    display:inline-block;
+    color:white;
+    position:relative;
+
+    
+}
+.header_navbar-item-link{
+    color:white;
+    text-decoration: none;
+}
+.header_navbar-item-logo{
+    padding-top:10px;
+    padding-right:200px;
+    text-align: center;
+    margin-top:-10px;
+    box-sizing: border-box;
+    height:100%vh;
+    width:auto;
+}
+.header_navbar-item:hover,
+.header_navbar-item-link:hover{
+    
+    cursor:pointer;
+    color: rgba(255,255,255, 0.7);
+
+}
+.doanvan2{
+    margin-top: 29px;
+}
+.logomini{
+    position:absolute;
+    width:50px;
+    height:40px;
+    top:-61px;
+    right:-329px;
+}
+.icon{
+    margin-right: 10px;
+    font-size:16px;
+}
+.grid_column{
+    
+}
+.danhsach{
+    padding:0;
+    display:flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+    margin:0 10px;
+    position:relative;
+    top: -101px;
+    left:50px;
+}
+.danh_muc_in_hoa{
+   
+   
+    margin-top:0;
+    margin-left: 10px;
+    margin-bottom: 0;
+    top:50px;
+    
+}
+.sanpham:hover,
+.link_san_pham:hover{
+    background:#450B20;
+    
+    cursor:pointer;
+    color:#C0890B;
+}
+   
+
+.link_san_pham{
+    text-decoration: none;
+    color:rgb(160, 20, 20);
+
+}
+.container{
+    display:block;
+    height:50px;
+   margin-top: -20px;
+  background-color: #e0d9d1;
+  
+
+    
+}
+h3{
+    font-family:;
+}
+.hinhlogo{
+    box-sizing: border-box;
+    z-index: 2;
+    width:90px;
+    height:115px;
+    position:relative;
+    top:-2px;
+    left:40px;
+}
+.trangchinh{
+    box-sizing: border-box; 
+   
+}
+.hinh:hover{
+    transform:scale(1.1);
+    transition:all 1s ease-in-out;
+
+}
+.hinh{
+    animation:ease-in-out 2s infinite;
+    box-sizing: border-box;
+  
+    margin-top:-327px;
+   
+    width:100%;
+    height:581px;
+
+}
+h2{
+    font-size:15px;
+}
+h1{
+    font-family:'Courier New', Courier, monospace;
+   color:#ebb63a;
+    font-size: 36px;
+}
+    
+    
+.chutieude{
+    color:white;
+    margin-top: 230px;
+    text-align: center;
+    z-index:3;
+    position: relative;
+ }
+.gioithieu{
+    box-sizing: border-box;
+   
+    margin-left:50px;
+    margin-right: 50px;
+}
+.chu::before,
+.chu::after{
+    content:url('callary-icon.png');
+    
+}
+.chu{
+    font-size: 40px;
+}
+hr{
+    width:50%;
+}
+.hinhuudai{
+    border:20px solid white;
+    width:38%;
+    height:auto;
+    border-radius:50px;
+    
+}
+.haihinh{
+    display:flex;
+    justify-content: center;
+    font-size:20px;
+}
+.haihinh:hover{
+    transform:scale(1.1);
+    transition:all 1s ease-in-out;
+
+}
+.chu{
+    font-family:'Courier New', Courier, monospace;
+}
+.title{
+    font-size:21px;
+}
+.sanhcuoi{
+    display:flex; 
+    justify-content: center;
+
+}
+.hinhsanhcuoi{
+    
+    width:44%;
+    height:auto;
+}
+.about{
+    
+   
+    justify-items: center;
+}
+.chunghieng{
+    text-align: center;
+}
+.hinhhoa{
+   
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+}
+.trangtri{
+    position:absolute;
+    color:white;
+    margin-top: -77px;
+    margin-left: 270px;
+    font-size: 30px;
+    font-weight: 500;
+}
+.mauhongnhat{
+    width: 100%;
+    height: 140px;
+    position: absolute;
+    left:0;
+    pointer-events: none;
+    background: linear-gradient(45deg,#f06496,#8cc8d0);
+    opacity: .6;
+}
+.kieutrangtri{
+    
+    margin:0px 50px 0px 50px;}
+.ndlienhe{
+    text-align: center;
+}
+.hinhtrangtri1,
+.hinhtrangtri2{
+   border:40px solid transparent;
+    width:50%;
+    height:453px;
+    
+}
+.hinhtrangtri{
+    display:flex;
+    margin:0 20px 0 20px;
+    
+}
+
+   
+   
+   
+
+.chutrangtri1,
+.chutrangtri2,
+.chutrangtri3,
+.chutrangtri31{
+   font-size: larger;
+}
+.phale1,
+.phale2{
+    display:flex;
+}
+.phale2{
+    margin-top: 30px;
+}
+.chutrangtri1{
+    font-size: large;
+    border-right: 50px solid transparent;
+    border-top:20px solid transparent;
+}
+.chutrangtri2{
+    border-left:66px solid transparent;
+
+}
+.hinhphale1,
+.hinhphale2{
+    width:48%;
+    height:auto;
+}
+.hinhphale2{
+    margin-top: 20px;
+}
+.chantrang{ 
+    box-sizing: border-box;
+
+}
+.thongtinlienhe{
+    display:flex;
+    justify-content:space-evenly;
+  }  
+.linkdc,.linksdt,.linkemail{
+  text-decoration: none;
+  color:black;
+
+}
+.thongtin{
+    padding:0;
+    font-size: larger;
+    list-style:none;
+}
+.lienhe{
+    background-image:url(hinh-nen-hong-cam-loang-mau.jpg);  
+    text-align: center;
+    object-fit:contain;
+}
+.inhoa{
+
+    margin-left: 169px;
+    font-size: larger;
+}
+.diachi-sdt{
+    margin-top: 20px;
+}
+.bando{
+    width:26px;
+    height:24px;
+    margin-left: -4px;
+}
+.ndsweety{
+    
+    display:flex;
+    justify-items: center;
+    justify-content: space-around;
+     align-items: center;
+
+}
+.hinhst1,.hinhst11
+{
+    border-radius:50px;
+    margin-bottom: 10px;
+    margin-left:10px;
+    width:450px;
+    height:auto;
+}
+
+.hinhst11{
+    margin-left: 55px;
+}    
+
+.hinhst{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.chutrangtri31{
+    border-left: 0;
+}
+.chutrangtri3,
+.chutrangtri31
+{
+    border:60px inset transparent;
+}
+.hinhphale2,
+.hinhphale1
+{
+    border:10px solid #EBDEF6;
+    width:38%;
+    height:auto;
+    border-radius:50px;
+    
+}
+.hinhst2{
+    display:flex;
+    justify-content:space-between;
+}
+.chutrangtri3{
+    
+    border-right: 10px solid transparent;
+}
+
+.st::before,.CP::before,.LAP::before,
+{
+content:url('callary-icon.png');
+}
+.st::after,.CP::after,.LAP::after,
+{
+    content:url('callary-icon.png');
+    }
+.hinhtrang{
+   
+    position:relative;
+}
+.chuc-clr{
+    display:flex;
+}
+.callary{
+    font-weight: 200;
+
+    }
+.chuc{
+    margin-right: 2px;
+    margin-top: 13px;
+    width:20px;
+    height:20px;
+}
+.end{
+    display:flex;
+    justify-content: space-around;
+    text-align: center;
+    justify-items: center;
+}
+.icong{
+    display:flex;
+    margin-right: 10px;
+    margin-top: 9px;
+   
+
+   
+}
+.linkfb,.linkig,.linkx{
+ padding-left:10px;
+ 
+}
+.chutrangtri1chuc-clr{
+    margin-left: 20px;
+}
+.bg-discount {
+    margin-top: 60px;
+}
+
+
+}
+
+.contact-form{
+    
+   
+}
+.contact-form {
+   background-image: url(https://i.pinimg.com/originals/2e/1f/22/2e1f22ea7e09bc006fcfba2189d98ddd.jpg);
+    background-repeat: no-repeat;
+    background-size: 1520px 590px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+}
+
+.contact-form .form-group {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+.ndlh2{
+    text-align: center;
+}
+.contact-form input, 
+.contact-form textarea {
+    width: 60%;
+    padding: 10px;
+    border: 3px solid#797979;
+    border-radius: 9px;
+    font-size: 20px;
+    
+    color: black ;
+    box-sizing: border-box;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color:#826618 ;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.contact-form button:hover {
+    background-color: #C69930}
+iframe{
+    
+    margin-top: -50px;
+}
+.lhtv-text{
+    margin-top: 0;
+    text-align: center;
+}
+.lhtv-text::after,.lhtv-text::before{
+    content:url('callary-icon.png')
+}
+.LAMOURPARFAIT{
+    background-image:url(https://intoroigiare.vn/wp-content/uploads/2023/12/background-xanh-mint.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+.CRYSTALPARADISE{
+    background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20220814/pngtree-hand-painted-watercolor-purple-pastel-background-image_1442143.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.sweety{
+    background-image:url(https://png.pngtree.com/background/20230112/original/pngtree-marble-pink-pastel-background-picture-image_2001458.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+
+}
+.lienhe{}

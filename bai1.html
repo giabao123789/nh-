@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Thiết Kế Web</title>
+        <meta chaset="thiết kế web">
+        <link rel="stylesheet" href="l6tt.css">
+        <script>
+            function hienthi(){
+            var tensp = document.getElementById("ten").innerText;
+            var soluongsp = document.getElementById("qty").value;
+            var giasp= document.getElementById("pro").getAttribute("data-price");
+            var tinhtien giasp*soluongsp;
+            document.getElementById("name").innerText=tensp;
+            document.getElementById("amount").innerText="$"+tinhtien}
+        </script>
+    </head>
+<body>
+<div class="container">
+    <h2 id="ten">IPHONE XS MAX 2019</h2>
+    <img src="images/iphone.png" alt=""><br>
+    <label id="pro" data-price="1950">Số lượng: </label>
+    <input id="qty" type="number" value="1" />
+    <button> Tính </button>
+    <hr>
+    <h3>Name: <span id="name">?</span></h3>
+    <h3>Amount: <span id="amount">?</span></h3>
+</div>
+
+    
+
+
+
+
+</body>
+</html> 
