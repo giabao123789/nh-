@@ -270,7 +270,9 @@ hr{
 .phale2{
     margin-top: 30px;
 }
+
 .chutrangtri1{
+   
     font-size: large;
     border-right: 50px solid transparent;
     border-top:20px solid transparent;
@@ -279,6 +281,7 @@ hr{
     border-left:66px solid transparent;
 
 }
+
 .hinhphale1,
 .hinhphale2{
     width:48%;
@@ -434,7 +437,7 @@ content:url('callary-icon.png');
    
 }
 .contact-form {
-   background-image: url(https://i.pinimg.com/originals/2e/1f/22/2e1f22ea7e09bc006fcfba2189d98ddd.jpg);
+   background-image: url(pngtree-flowers-over-a-blank-white-paper-image_13214559.jpg);
     background-repeat: no-repeat;
     background-size: 1520px 590px;
     border-radius: 8px;
@@ -498,6 +501,7 @@ iframe{
     margin-top: -50px;
 }
 .lhtv-text{
+
     margin-top: 0;
     text-align: center;
 }
@@ -505,7 +509,7 @@ iframe{
     content:url('callary-icon.png')
 }
 .LAMOURPARFAIT{
-    background-image:url(https://intoroigiare.vn/wp-content/uploads/2023/12/background-xanh-mint.jpg);
+    background-image:url(https://png.pngtree.com/background/20221104/original/pngtree-green-watercolor-background-with-leaves-ornament-picture-image_1944683.jpg);
     background-repeat: no-repeat;
     background-size: 100% auto;
 }
@@ -521,3 +525,39 @@ iframe{
 
 }
 .lienhe{}
+@-webkit-keyframes my {
+	 0% { color: #F8CD0A; } 
+	 50% { color: #fff;  } 
+	 100% { color: #F8CD0A;  } 
+ }
+ @-moz-keyframes my { 
+	 0% { color: #F8CD0A;  } 
+	 50% { color: #fff;  }
+	 100% { color: #F8CD0A;  } 
+ }
+ @-o-keyframes my { 
+	 0% { color: #F8CD0A; } 
+	 50% { color: #fff; } 
+	 100% { color: #F8CD0A;  } 
+ }
+ @keyframes my { 
+	 0% { color: #F8CD0A;  } 
+	 50% { color: #fff;  }
+	 100% { color: #F8CD0A;  } 
+ } 
+ .lhtv-text {
+         
+         font-size:24px;
+         font-weight:bold;
+	 -webkit-animation: my 700ms infinite;
+	 -moz-animation: my 700ms infinite; 
+	 -o-animation: my 700ms infinite; 
+	 animation: my 700ms infinite;
+}
+.hinhbien{
+    display:block;
+    box-sizing: border-box;
+    background-image:url(snapedit_1723908509404.png);
+    background-size: 100% 700px;
+    
+}
