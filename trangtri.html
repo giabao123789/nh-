@@ -107,10 +107,74 @@
 
             </div>
         </div>
-        <div class="BEACH">
+        <div class="cdbien">
             <div class="hinhbien">
-                <h1 class="beach">BEACH</h1>
+                
             </div>
+            <div class="BEACH">
+            <div class="ndb">
+                <p class="chutrangtri4">Tiệc cưới chủ đề biển mang đến không gian lãng mạn và mát mẻ, với màu xanh ngọc bích của biển cả làm chủ đạo. Được trang trí với những chi tiết như vỏ sò, san hô, và các yếu tố biển khơi, bữa tiệc như đưa khách mời vào một hành trình khám phá đại dương kỳ diệu. Khung cảnh của sóng biển nhẹ nhàng cùng ánh nắng vàng rực rỡ tạo nên một không gian thoải mái, đầy cảm xúc, nơi tình yêu được ví như biển cả bao la, vĩnh cửu và đầy sức sống.</p>
+            </div>
+            <div class="slide">
+                <div class="anh1"><img id="anh" src="images/0.JPG" /></div>
+                <div class="btn_container">
+                    <button onclick="first()"> << </button>
+                    <button onclick="prev()"> <</button>
+                    <button onclick="next()"> > </button>
+                    <button onclick="last()"> >> </button>
+                </div>
+            </div>
+            <script>
+                var images = [];
+                    var index = 0; // vị trí ảnh đang hiển thị
+                    var sohinh = 3;
+                    for (var i = 0; i < sohinh; i++) {
+                    images[i] = new Image();
+                    images[i].src = "images/" + i + ".jpg"; }
+            </script>
+            <script>
+            function updateImage() {
+                var anh = document.getElementById("anh");
+                anh.classList.remove('active'); // Loại bỏ lớp active trước đó
+                setTimeout(function() { // Đợi ảnh cũ mờ đi, sau đó đổi ảnh
+                    anh.src = images[index].src;
+                    anh.classList.add('active'); // Thêm lớp active để làm ảnh mới xuất hiện
+                }, 100); // Độ trễ nhỏ để có hiệu ứng mượt hơn
+            }
+            </script>
+            <script>
+                function first(){
+                    index = 0;
+                    var anh = document.getElementById("anh");
+                    anh.src = images[index].src;
+        }
+                function last(){
+                    index = images.length - 1;
+                    var anh = document.getElementById("anh");
+                    anh.src = images [index].src;;
+        }
+                function next(){
+        
+                    index++;
+                    if(index >= images.length) index = 0;
+                    var anh = document.getElementById("anh");
+                    anh.src = images [index].src;
+        }
+                function prev(){
+                    index--;
+                    if(index < 0) index = images.length - 1; 
+                    var anh = document.getElementById("anh");
+                    anh.src = images [index].src;
+        }
+        
+            </script>
+            <script>
+                function autoSlide() {
+            setInterval(next, 3000);} // Gọi hàm next() sau mỗi 4 giây
+// Bắt đầu tự động slideshow khi trang tải xong
+window.onload = autoSlide;
+            </script>
+        
         </div>
     </div>
 
@@ -124,8 +188,54 @@
      
 
     
-</body>
 
-        
+
+
+
+ </body>    
+ <footer class="footer">
+    <div class="chantrang">
+        <div class="thongtinlienhe">
+            <img class="logo" src="logo (2).png">
+            <div class="diachi-sdt">
+                <h3 class="lienhe">LIÊN HỆ</h3>
+                <ul class="thongtin">
+                    <li class="dc">
+                        <img class="bando" src="Ảnh chụp màn hình 2024-08-10 180924.png">
+                        <a href="https://www.google.com/maps/dir//70+%C4%90.+T%C3%B4+K%C3%BD,+T%C3%A2n+Ch%C3%A1nh+Hi%E1%BB%87p,+Qu%E1%BA%ADn+12,+H%E1%BB%93+Ch%C3%AD+Minh/@10.8657345,106.535716,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x31752b2a11844fb9:0xbed3d5f0a6d6e0fe!2m2!1d106.6181025!2d10.8657413?entry=ttu" class="linkdc">70 Đ. Tô Ký, Tân Chánh Hiệp, Quận 12, Hồ Chí Minh</a></li>
+                    <br>
+                        <li class="sdt">
+                        <a href="tel:(+84 28) 38 43 5556" class="linksdt"><i class="icon fas fa-phone"></i>Hotline:(+84) 123 456</a></li>
+                    <br>
+                        <li class="email">
+                        <a href="mailto:event@Callary.vn" class="linkemail"><i class="icon fas fa-mail-bulk"></i>Email:event@callary.vn</a></li>
+                </ul>
+            <br>
+            <p>HỌ VÀ TÊN-MSSV:VÕ THÀNH ĐẠT-</p>
+            <p>HỌ VÀ TÊN-MSSV:TRẦN GIA BẢO-2251120271</p>
+            </div>
+        </div>
+        <p class="inhoa">TRUNG TÂM TIỆC CƯỚI VÀ HỘI NGHỊ CALLARY</p>
+        <div class="end">
+            <div class="chuc-clr">
+                <img class="chuc" src="Ảnh chụp màn hình 2024-08-12 005138.png">
+                <p class="callary">2024 Callary </p>
+            </div>
+            <div class="icong">
+                <a href="fb" class="linkfb"><i class="icong fab fa-facebook 1"></i></a>
+                <a href="ig" class="linkig"><i class="icong fab fa-instagram 1"></i></a>
+                <a href="x" class="linkx"><i class="icong fab fa-twitter 1"></i></a>
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+
+
+
+</footer>   
 
 </html>
