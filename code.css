@@ -446,7 +446,7 @@ content:url('callary-icon.png');
    
 }
 .contact-form {
-   background-image: url(pngtree-flowers-over-a-blank-white-paper-image_13214559.jpg);
+   background-image: url(background-with-3d-blooming-rose-flowers_23-2151028099.avif);
     background-repeat: no-repeat;
     background-size: 1520px 590px;
     border-radius: 8px;
@@ -604,3 +604,37 @@ iframe{
 
 
 
+.video-container {
+    position: relative;
+    width: 1518.800px;
+    height:579px;
+    margin: 0 auto; /* Canh giữa video */
+    overflow: hidden;
+}
+
+.video-container video {
+    margin-top: -103px;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.136); /* Lớp mờ mờ với màu đen */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none; /* Không ảnh hưởng đến tương tác với video */
+}
+
+.video-text {
+    color:#ebb63a;
+    font-size: 2em;
+    text-align: center;
+    z-index: 2;
+}
