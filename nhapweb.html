@@ -81,14 +81,84 @@
              <div class="about">
                 <h1 class="chu">Giới thiệu</h1>
                 <h2 class="title">Calla – Không gian tiệc xanh – Sảnh cưới đẹp khiết gắn kết những tâm hồn</h2>
-                <p class="a">Giữa lòng Sài Gòn chật chội, người ta vẫn luôn tìm kiếm cho mình một chốn thanh mát, nhẹ nhàng. Đó sẽ là một không gian mát mẻ, yên tĩnh và bình yên chỉ dành riêng cho bản thân. Và có thể, ngay trong ngày trọng đại, những cặp đôi yêu thiên nhiên cũng mong muốn được <b>tổ chức tiệc cưới</b> giữa một không gian đặc trưng như thế. 
-                Với tư cách là một trong những đơn vị tổ chức tiệc uy tín ở Thành phố Hồ Chí Minh, Callary tự hào rằng chúng tôi có thể tạo ra một không gian cưới phù hợp với yêu cầu của bạn nhất. </p>
+                <p class="a">Giữa lòng Sài Gòn chật chội, người ta vẫn luôn tìm kiếm cho mình một chốn thanh mát, nhẹ nhàng. Đó sẽ là một không gian mát mẻ, yên tĩnh và bình yên chỉ dành riêng cho bản thân. Và có thể, ngay trong ngày trọng đại, những cặp đôi yêu thiên nhiên cũng mong muốn được <b>tổ chức tiệc cưới</b> giữa một không gian đặc trưng như thế.</p> 
+                
                 <p>Với tư cách là một trong những đơn vị tổ chức tiệc uy tín ở Thành phố Hồ Chí Minh, <b>Callary</b> tự hào rằng chúng tôi có thể tạo ra một không gian cưới phù hợp với yêu cầu của bạn nhất. </p>
-                <div class="sanhcuoi"><img class="hinhsanhcuoi" src="nha-hang-tiec-cuoi-nhan-tam.jpg"></div>
-                <div class="chunghieng"><p><i>Một tiệc cưới sang trọng ấn tượng</i></p></div>
-            
-            
-            
+                <div class="slide">
+                    <div class="anh1_1"><img id="anh1" src="images_1/0.JPG" /></div>
+                    <div class="chunghieng"><p><i>Một số hình ảnh về Callary</i></p></div>
+                    <div class="btn_container">
+                        <button onclick="first()"> << </button>
+                        <button onclick="prev()"> < </button>
+                        <button onclick="next()"> > </button>
+                        <button onclick="last()"> >> </button>
+                    </div>
+                </div>
+                    <script>
+                        var images_1 = [];
+                            var index = 2; // vị trí ảnh đang hiển thị
+                            var sohinh = 3;
+                            for (var i = 0; i < sohinh; i++) {
+                            images_1[i] = new Image();
+                            images_1[i].src = "images_1/" + i + ".jpg"; }
+                    </script>
+                    <script>
+                    function updateImage() {
+                        var anh1 = document.getElementById("anh1");
+                        anh1.classList.remove('active'); // Loại bỏ lớp active trước đó
+                        setTimeout(function() { // Đợi ảnh cũ mờ đi, sau đó đổi ảnh
+                            anh1.src = images_1[index].src;
+                            anh1.classList.add('active'); // Thêm lớp active để làm ảnh mới xuất hiện
+                        }, 100); // Độ trễ nhỏ để có hiệu ứng mượt hơn
+                    }
+                    </script>
+                    <script>
+                        function first(){
+                            index = 0;
+                            var anh1 = document.getElementById("anh1");
+                            anh1.src = images_1[index].src;
+                }
+                        function last(){
+                            index = images_1.length - 1;
+                            var anh1 = document.getElementById("anh1");
+                            anh1.src = images_1[index].src;;
+                }
+                        function next(){
+                
+                            index++;
+                            if(index >= images_1.length) index = 0;
+                            var anh1 = document.getElementById("anh1");
+                            anh1.src = images_1[index].src;
+                }
+                        function prev(){
+                            index--;
+                            if(index < 0) index = images_1.length - 1; 
+                            var anh1 = document.getElementById("anh1");
+                            anh1.src = images_1[index].src;
+                }
+                
+                    </script>
+                    <script>
+                        function autoSlide() {
+                    setInterval(next, 3000);} // Gọi hàm next() sau mỗi 4 giây
+        // Bắt đầu tự động slideshow khi trang tải xong
+        window.onload = autoSlide;
+                    </script>
+
+                    <div class="khoanhkhac">
+                        <img class="polaroi" height="800px" width="800px" src="pngtree-polaroid-frame-with-pastel-color-and-love-theme-png-image_6868562.png">
+                        <div class="dsanhcuoi">
+                            <img class="hinhcuoi"  src="tải xuống (1).jpg">
+                            <img class="hinhcuoi"  src="tải xuống (2).jpg" >
+                            <img class="hinhcuoi"  src="images (2).jpg" >
+                        </div>
+                        <div class="dsanhcuoi1">
+                            <img class="hinhcuoi1"  src="tải xuống (5).jpg">
+                            <img class="hinhcuoi1"  src="tải xuống (3).jpg" >
+                            <img class="hinhcuoi1"  src="tải xuống (4).jpg" >
+                        </div>
+                    </div>
+                
             
             <div class="uudai">
                 <h1 class="chu">Ưu Đãi</h1>

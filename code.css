@@ -210,6 +210,7 @@ hr{
 }
 .chunghieng{
     text-align: center;
+    margin-top: -15px;
 }
 .hinhhoa{
    
@@ -420,6 +421,7 @@ content:url('callary-icon.png');
     justify-items: center;
 }
 .icong{
+    
     display:flex;
     margin-right: 10px;
     margin-top: 9px;
@@ -579,7 +581,7 @@ iframe{
     
     text-align: center;
  }
- #anh{
+ #anh,#anh1{
     width:622px;
     height:402px;
  }
@@ -613,7 +615,7 @@ iframe{
 }
 
 .video-container video {
-    margin-top: -103px;
+    margin-top: -28px;
     width: 100%;
     height: auto;
     display: block;
@@ -625,7 +627,7 @@ iframe{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.136); /* Lớp mờ mờ với màu đen */
+    background-color: rgba(0, 0, 0, 0.021); /* Lớp mờ mờ với màu đen */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -637,4 +639,40 @@ iframe{
     font-size: 2em;
     text-align: center;
     z-index: 2;
+}
+#anh1{
+    border:5px solid #EBB63A;
+    border-radius: 50px;
+}
+.khoanhkhac{
+    
+    
+}
+.polaroi{
+    background-image: url(pngtree-polaroid-frame-with-heart-illustration-background-cute-style-png-image_8956876.png);
+    background-size: 822px 470px;
+    background-repeat: no-repeat;
+}
+.dsanhcuoi,.dsanhcuoi1{
+    stop:10px;
+    bottom:700px;
+    right;
+    left:82.5px;
+    position:relative;
+}
+.hinhcuoi1{
+    margin-top: 200px;
+}
+.hinhcuoi,.hinhcuoi1{
+    margin-right: 56px;
+    height:171px ;
+    width:172px;
+}
+.khoanhkhac{
+    
+    margin-left: 303px;
+    height:750px;
+}
+.title1{
+    font-size: 21px;
 }
