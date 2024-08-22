@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Callary-Liên Hệ Tư Vấn</title>
-    <meta charsset="utf-8"> 
-    <link rel="stylesheet" href="code.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-    
-</head>
-
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <?php
 // Kiểm tra nếu yêu cầu đến là POST
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
