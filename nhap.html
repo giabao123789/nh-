@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Menu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Basic reset */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Menu styles */
+        .danhmuc {
+            position: fixed; /* Fixed position */
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #fff; /* Background color to make it visible */
+            border-bottom: 1px solid #ddd; /* Optional border for visual separation */
+            z-index: 1000; /* Ensure it sits above other content */
+            transition: all 0.3s ease; /* Smooth transition */
+        }
+
+        .danhmuc.small {
+            margin-top: 15px; /* Adjust padding when small */
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Optional shadow */
+        }
+
+        .danhsach {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-around; /* Space out items evenly */
+        }
+
+        .danhsach .sanpham, .danhsach .sanpham2 {
+            padding: 10px 15px;
+        }
+
+        .link_san_pham {
+            text-decoration: none;
+            color: #333;
+            display: flex;
+            align-items: center;
+        }
+
+        .link_san_pham i {
+            margin-right: 8px;
+        }
+
+        .submenu {
+            display: none; /* Hide submenu by default */
+            position: absolute;
+            top: 100%; /* Position it below the parent item */
+            left: 0;
+            background-color: #fff;
+            list-style: none;
+            padding: 0;
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .sanpham:hover .submenu {
+            display: block; /* Show submenu on hover */
+        }
+
+        .submenu li {
+            padding: 10px;
+        }
+
+        .submenu li a {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <nav class="danhmuc" id="navbar">
+        <ul class="danhsach">
+            <li class="sanpham">
+                <a href="code.html" class="link_san_pham"><i class="fas fa-home"></i> Trang chủ</a>
+                <ul class="submenu">
+                    <li><a href="http://127.0.0.1:5500/code.html#:~:text=Callary-,Gi%E1%BB%9Bi%20thi%E1%BB%87u,-Callary%20%E2%80%93%20Kh%C3%B4ng%20gian">Giới thiệu</a></li>
+                    <li><a href="http://127.0.0.1:5500/code.html#:~:text=m%C3%A3i%20tr%C3%A2n%20qu%C3%BD.-,%C6%AFu%20%C4%90%C3%A3i,-%E1%BB%9E%20Callary%2C%20Ch%E1%BA%A5t">Ưu đãi</a></li>
+                </ul>
+            </li>
+            <li class="sanpham">
+                <a href="#" class="link_san_pham"><i class="fas fa-dungeon"></i> Sảnh cưới</a>
+            </li>
+            <li class="sanpham">
+                <a href="#" class="link_san_pham"><i class="fas fa-star"></i> Trang trí</a>
+            </li>
+            <li class="sanpham">
+                <a href="#" class="link_san_pham"><i class="fas fa-utensils"></i> Thực đơn</a>
+            </li>
+            <li class="sanpham2">
+                <a href="datlich.html" class="link_san_pham"><i class="fas fa-calendar-week"></i> Đặt lịch</a>
+            </li>
+            <li class="sanpham">
+                <a href="hlhtv.html" class="link_san_pham"><i class="fas fa-calendar-alt"></i> Liên hệ tư vấn</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Main content to demonstrate scrolling -->
+    <div style="padding: 60px 10px;">
+        <p>Content goes here...</p>
+        <p>Content goes here...</p>
+        <p>Content goes here...</p>
+        <p>Content goes here...</p>
+        <p>Content goes here...</p>
+        <p>Content goes here...</p>
+        <p>Content goes here...</p>
+        <p>Content goes here...</p>
+        <p>Content goes here...</p>
+        <p>Content goes here...</p>
+        <p>Content goes here...</p>
+        <p>Content goes here...</p>
+
+        <p>Content goes here...</p>
+        <p>Content goes here...</p>
+        <p>Content goes here...</p>
+
+        <p>Content goes here...</p>
+        <p>Content goes here...</p>
+        <p>Content goes here...</p>
+        <p>Content goes here...</p>
+
+        <p>Content goes here...</p>
+        <p>Content goes here...</p>
+
+        <p>Content goes here...</p>
+        <p>Content goes here...</p>
+
+        <p>Content goes here...</p>
+        <p>Content goes here...</p>
+        <p>Content goes here...</p>
+        <p>Content goes here...</p>
+        <p>Content goes here...</p>
+
+        <p>Content goes here...</p>
+
+        <!-- Add enough content here to enable scrolling -->
+    </div>
+
+    <script>
+        // JavaScript to add or remove the 'small' class based on scroll position
+        window.addEventListener('scroll', function() {
+            var navbar = document.getElementById('navbar');
+            if (window.scrollY > 10) { // Adjust this value based on when you want the navbar to shrink
+                navbar.classList.add('small');
+            } else {
+                navbar.classList.remove('small');
+            }
+        });
+    </script>
+</body>
+</html>

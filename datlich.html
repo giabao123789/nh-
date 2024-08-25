@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Callary-Liên Hệ Tư Vấn</title>
+    <title>Callary-Đặt lịch</title>
     <meta charsset="UTF-8"> 
     <link rel="stylesheet" href="code.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
@@ -56,49 +56,59 @@
             </ul>
         </nav>
      </div>
-     
-     <div class="lhtv">
-    	<h1 class="lienhe">
-    		<img src="https://callary.vn/wp-content/themes/callary_theme/images/callary-icon.png">
-    		LIÊN HỆ NGAY
-    		<img src="https://callary.vn/wp-content/themes/callary_theme/images/callary-icon.png">
-        </h1>
-        <hr>
-    	<p class="ndlienhe">Hãy để lại thông tin, chúng tôi sẽ tư vấn ngay cho bạn</p>
-        <hr>
-        <p class="ndlh2">Với mong muốn đem lại dịch vụ tốt nhất cho khách hàng. Chúng tôi luôn mong chờ những góp ý chân thành từ các bạn. Hãy gửi lời nhắn cho chúng tôi nếu bạn có góp ý hoặc bất cứ nhu cầu hợp tác nào!</p>
-    	<div class="row bg-discount">
-    		<div class="col-lg-6 col-12 img-map">
-    			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.2946840267364!2d106.61381087487108!3d10.865176589289046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752a10b0f0554f%3A0x769800e8967d6703!2zNzAgxJAuIFTDtCBLw70sIFTDom4gQ2jDoW5oIEhp4buHcCwgUXXhuq1uIDEyLCBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1723518618559!5m2!1svi!2s" width="1520" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    		</div>
-    	
+    </div>
+
+    
+    <body><div class="datlich">
+        <h1 class="datlich-text">ĐẶT LỊCH CƯỚI</h1>
         </div>
-        <div class="contact-form">
-            <div class=lienhengay>
-                <h1 class="lhtv-text">Liên Hệ Tư Vấn</h1>
-            </div>
-            <form action="submit_form.php" method="POST">
+        <div class="booking-form">
+            
+            <form action="booking_form.php" method="POST">
                 <div class="form-group">
-                    <label for="name">Họ và tên:</label>
-                    <input type="text" id="name" name="name" required>
+                    <label for="namegroom">🤵 Tên chú rể:</label>
+                    <input type="text" id="namegroom" name="namegroom" required>
                 </div>
                 <div class="form-group">
-                    <label for="email">Email:</label>
+                    <label for="namebride">👰 Tên cô dâu:</label>
+                    <input type="text" id="namebride" name="namebride" required>
+                </div>
+                <div class="form-group">
+                    <label for="weddingDate"><i class="far fa-clock"></i> Ngày Cưới:</label>
+                    <input type="date" id="weddingDate" name="weddingDate" required>
+                </div>
+                <div class="form-group">
+                    <label for="guests"><i class="fas fa-users"></i> Số Khách Mời:</label>
+                    <input type="number" id="guests" name="guests" min="1" required>
+                </div>
+                <div class="form-group">
+                    <label for="email"><i class="fas fa-envelope"></i> Email:</label>
                     <input type="email" id="email" name="email" required>
                 </div>
                 <div class="form-group">
-                    <label for="phone">Số điện thoại:</label>
+                    <label for="phone"><i class="fas fa-phone-alt"></i> Số điện thoại:</label>
                     <input type="tel" id="phone" name="phone" required>
                 </div>
                 <div class="form-group">
-                    <label for="subject">Chủ đề:</label>
+                    <label for="subject"><i class="fas fa-magic"></i> Chủ đề trang trí:</label>
                     <input type="text" id="subject" name="subject" required>
                 </div>
                 <div class="form-group">
-                    <label for="message">Tin nhắn:</label>
+                    <label for="message"><i class="fas fa-sms"></i> Tin nhắn:</label>
                     <textarea id="message" name="message" required></textarea>
                 </div>
-                <button type="submit">Gửi yêu cầu</button>
+                <button type="submit">Đặt lịch</button>
             </form>
         </div>
-    </div>
+    </body>
+
+
+
+
+
+
+
+
+
+
+</html>
